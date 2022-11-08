@@ -1,0 +1,28 @@
+# NAVIGATION
+alias ..="cd .."
+alias ...="cd ../.."
+alias ....="cd ../../.."
+alias .....="cd ../../../.."
+
+# LIST BINDINGS
+alias ll="ls -alt"
+alias la="ls -a"
+
+# COMMON DIRECTORIES
+alias home="cd ~"
+alias github="cd ~/dev/Github"
+alias gitlab="cd ~/dev/gitlab"
+
+# GIT
+alias g="git"
+alias gc="git clone"
+alias gs="git status"
+alias gd="git diff"
+alias gb="git branch"
+alias gm="git checkout development"
+alias fame="python3 -m gitfame" 
+alias gp="git remote prune origin" 
+
+# EASIER DOTFILE EDITING
+alias aliases="vim ~/.aliases && . ~/.aliases"
+alias bashprofile="vim ~/.bash_profile && . ~/.bash_profile"
