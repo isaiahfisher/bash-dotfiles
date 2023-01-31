@@ -26,3 +26,6 @@ alias gp="git remote prune origin"
 # EASIER DOTFILE EDITING
 alias aliases="vim ~/.aliases && . ~/.aliases"
 alias bashprofile="vim ~/.bash_profile && . ~/.bash_profile"
+
+# JSON parsing
+alias jpterm="python3 -m jpterm"
