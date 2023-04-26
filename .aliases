@@ -12,6 +12,7 @@ alias la="ls -a"
 alias home="cd ~"
 alias github="cd ~/dev/Github"
 alias gitlab="cd ~/dev/gitlab"
+alias sites="cd ~/Sites"
 
 # GIT
 alias g="git"
@@ -22,6 +23,7 @@ alias gb="git branch"
 alias gm="git checkout development"
 alias fame="python3 -m gitfame" 
 alias gp="git remote prune origin" 
+alias glog="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
 
 # EASIER DOTFILE EDITING
 alias aliases="vim ~/.aliases && . ~/.aliases"
@@ -29,3 +31,10 @@ alias bashprofile="vim ~/.bash_profile && . ~/.bash_profile"
 
 # JSON parsing
 alias jpterm="python3 -m jpterm"
+
+# SWEETDEV
+alias ss="sweetdev setup"
+alias ss prune="sweetdev setup --prune"
+
+# LARAVEL DEV
+alias Lgrep="grep -r --exclude-dir=\"vendor\" --exclude-dir=\"node_modules\" --exclude-dir=\"storage\" --exclude-dir=\"test\" --exclude-dir=\"public\" --exclude-dir=\".git\""
