@@ -21,6 +21,7 @@ alias gs="git status"
 alias gd="git diff"
 alias gb="git branch"
 alias gm="git checkout development"
+alias gM="git checkout master"
 alias fame="python3 -m gitfame" 
 alias gp="git remote prune origin" 
 alias glog="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
@@ -38,3 +39,9 @@ alias ss prune="sweetdev setup --prune"
 
 # LARAVEL DEV
 alias Lgrep="grep -r --exclude-dir=\"vendor\" --exclude-dir=\"node_modules\" --exclude-dir=\"storage\" --exclude-dir=\"test\" --exclude-dir=\"public\" --exclude-dir=\".git\""
+
+# DNS FLUSH
+alias dnsflush="sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder"
+
+# Kill SweetUpdate
+alias swnoupdate="sudo killall SweetUpdate"
