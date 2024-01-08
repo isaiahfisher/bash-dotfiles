@@ -45,3 +45,6 @@ alias dnsflush="sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder"
 
 # Kill SweetUpdate
 alias swnoupdate="sudo killall SweetUpdate"
+
+# MONOLITH DEV
+alias Mgrep="grep -r --exclude-dir=\"vendor\" --exclude-dir=\"node_modules\" --exclude-dir=\"storage\" --exclude-dir=\"test\" --exclude-dir=\"dist\" --exclude-dir=\".git\""
