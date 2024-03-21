@@ -25,6 +25,8 @@ alias gM="git checkout master"
 alias fame="python3 -m gitfame" 
 alias gp="git remote prune origin" 
 alias glog="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
+alias gmerged="git branch --merged"
+alias glp="git branch --merged >/tmp/merged-branches && vi /tmp/merged-branches && xargs git branch -d </tmp/merged-branches"
 
 # EASIER DOTFILE EDITING
 alias aliases="vim ~/.aliases && . ~/.aliases"
