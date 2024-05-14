@@ -37,7 +37,6 @@ alias jpterm="python3 -m jpterm"
 
 # SWEETDEV
 alias ss="sweetdev setup"
-alias ss prune="sweetdev setup --prune"
 
 # LARAVEL DEV
 alias Lgrep="grep -r --exclude-dir=\"vendor\" --exclude-dir=\"node_modules\" --exclude-dir=\"storage\" --exclude-dir=\"test\" --exclude-dir=\"public\" --exclude-dir=\".git\""
@@ -50,3 +49,13 @@ alias swnoupdate="sudo killall SweetUpdate"
 
 # MONOLITH DEV
 alias Mgrep="grep -r --exclude-dir=\"vendor\" --exclude-dir=\"node_modules\" --exclude-dir=\"storage\" --exclude-dir=\"test\" --exclude-dir=\"dist\" --exclude-dir=\".git\""
+
+# laravel sail
+alias sail="vendor/bin/sail"
+
+# kubes stuff
+# censored cluster context -- add back in
+alias devkube-list="kubectl get pods --context=<REPLACEME> -n"
+alias prodkube-list="kubectl get pods -n"
+alias devkube-describe="kubectl describe pod --context=<REPLACEME> -n"
+alias prodkube-describe="kubectl describe pod -n"
